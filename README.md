@@ -5,7 +5,7 @@ A simple CLI tool for previewing markdown files in Github Flavored Markdown
 
 ## Quick Installation
 
-    curl -s -o /usr/local/bin/bd https://raw.github.com/marcqualie/bashdown/master/bashdown.sh
+    curl -s -o /usr/local/bin/bd https://raw.github.com/marcqualie/bashdown/master/bashdown.sh && chmod +x /usr/local/bin/bd
 
 
 ## Usage
