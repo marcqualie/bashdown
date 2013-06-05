@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Get filename
+FILENAME=$1
+if [ "$FILENAME" == "" ]
+then
+  echo "No filename specified"
+  exit 1
+fi
+if [ ! -f "$FILENAME" ]
+then
+  echo "File does not exist"
+  exit 1
+fi
+
+# Customize COMMAND
+COMMAND=$2
+if [ "$COMMAND" == "" ]
+then
+  if [ "$BASHDOWN_DEFAULT_COMMAND" == "" ]
+  then
+    COMMAND="cat"
+  else
+    COMMAND=$BASHDOWN_DEFAULT_COMMAND
+  fi
+fi
+
+# Convert file and Render
+curl -s -X POST -H "Content-Type: text/x-markdown" --data-binary @$FILENAME https://api.github.com/markdown/raw > /tmp/bashdown.html
+if [ -f "/tmp/bashdown.html" ]
+then
+  eval $COMMAND /tmp/bashdown.html
+else
+  echo "Something bad happened, try again or report at https://github.com/marcqualie/bashdown"
+  exit 1
+fi
