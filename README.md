@@ -25,3 +25,8 @@ A simple CLI tool for previewing markdown files in Github Flavored Markdown
 
     bd README.md > README.html
     bd README.md "open -a /Applications/Google\ Chrome.app"
+
+
+## Thanks
+
+[Sam Lambert](https://github.com/samlambert) for helping with the naming of this tool
