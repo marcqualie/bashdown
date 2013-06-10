@@ -1,0 +1,10 @@
+#!/bin/sh
+
+BD_PATH=/usr/local/bin/bd
+
+curl -s -o $BD_PATH https://raw.github.com/marcqualie/bashdown/master/bashdown
+chmod +x $BD_PATH
+
+echo ""
+echo "    Bashdown is now installed in \033[32m$BD_PATH\033[0m"
+echo ""
