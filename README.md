@@ -18,7 +18,7 @@ A simple CLI tool for previewing markdown files in Github Flavored Markdown
 
 ## Variables
 
-    export BASHDOWN_DEFAULT_PROGRAM="open -a /Applications/Google\ Chrome.app"
+    export BASHDOWN_DEFAULT_COMMAND="open -a /Applications/Google\ Chrome.app"
 
 
 ## Examples
