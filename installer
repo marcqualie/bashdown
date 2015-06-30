@@ -2,7 +2,7 @@
 
 BD_PATH=/usr/local/bin/bd
 
-curl -s -o $BD_PATJ https://raw.githubusercontent.com/marcqualie/bashdown/master/bashdown
+curl -s -o $BD_PATH https://raw.githubusercontent.com/marcqualie/bashdown/master/bashdown
 chmod +x $BD_PATH
 
 echo ""
