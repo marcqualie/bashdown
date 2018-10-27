@@ -19,7 +19,7 @@ if [ "$COMMAND" == "" ]
 then
   if [ "$BASHDOWN_DEFAULT_COMMAND" == "" ]
   then
-    COMMAND="cat"
+    COMMAND="open -a /Applications/Google\ Chrome.app"
   else
     COMMAND=$BASHDOWN_DEFAULT_COMMAND
   fi
